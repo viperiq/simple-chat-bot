@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/download.png') }}" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="product-grid">
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/preview.jpg') }}" alt="VINTEL2 Laptop">
+            <div class="product-description">
+                VINTEL2 Laptop Specifications:<br>
+                - Processor: Intel Core i7<br>
+                - RAM: 16GB<br>
+                - Storage: 512GB SSD<br>
+                - Display: 14-inch QHD<br>
+                - Price: $1099
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/preview.jpg') }}" alt="VINTEL2 Laptop">
+            <div class="product-description">
+                VINTEL2 Laptop Specifications:<br>
+                - Processor: Intel Core i7<br>
+                - RAM: 16GB<br>
+                - Storage: 512GB SSD<br>
+                - Display: 14-inch QHD<br>
+                - Price: $1099
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/preview.jpg') }}" alt="VINTEL3 Laptop">
+            <div class="product-description">
+                VINTEL3 Laptop Specifications:<br>
+                - Processor: AMD Ryzen 7<br>
+                - RAM: 12GB<br>
+                - Storage: 1TB HDD<br>
+                - Display: 13.3-inch HD<br>
+                - Price: $799
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+    
+    <div class="product-grid">
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/33632332_phone_14_01.jpg') }}" alt="PHONEX1 Phone">
+            <div class="product-description">
+                مواصفات هاتف PHONEX1:<br>
+                - نظام التشغيل: Android 11<br>
+                - الكاميرا: 48 ميجابيكسل<br>
+                - الذاكرة: 128 جيجابايت<br>
+                - الشاشة: 6.5 بوصة Full HD<br>
+                - السعر: $399
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/33632332_phone_14_01.jpg') }}" alt="PHONEX2 Phone">
+            <div class="product-description">
+                مواصفات هاتف PHONEX2:<br>
+                - نظام التشغيل: iOS 15<br>
+                - الكاميرا: 12 ميجابيكسل<br>
+                - الذاكرة: 256 جيجابايت<br>
+                - الشاشة: 6.1 بوصة Super Retina<br>
+                - السعر: $799
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/33632332_phone_14_01.jpg') }}" alt="PHONEX3 Phone">
+            <div class="product-description">
+                مواصفات هاتف PHONEX3:<br>
+                - نظام التشغيل: Android 12<br>
+                - الكاميرا: 64 ميجابيكسل<br>
+                - الذاكرة: 256 جيجابايت<br>
+                - الشاشة: 6.7 بوصة AMOLED<br>
+                - السعر: $899
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+    
+    <div class="product-grid">
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/pngegg.png') }}" alt="TABLETX1 Tablet">
+            <div class="product-description">
+                مواصفات اللوحة TABLETX1:<br>
+                - نظام التشغيل: Android 11<br>
+                - حجم الشاشة: 10.1 بوصة<br>
+                - الذاكرة: 64 جيجابايت<br>
+                - البطارية: 6000 مللي أمبير<br>
+                - السعر: $299
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/pngegg.png') }}" alt="TABLETX2 Tablet">
+            <div class="product-description">
+                مواصفات اللوحة TABLETX2:<br>
+                - نظام التشغيل: iOS 15<br>
+                - حجم الشاشة: 11 بوصة<br>
+                - الذاكرة: 128 جيجابايت<br>
+                - البطارية: 8000 مللي أمبير<br>
+                - السعر: $499
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/pngegg.png') }}" alt="TABLETX3 Tablet">
+            <div class="product-description">
+                مواصفات اللوحة TABLETX3:<br>
+                - نظام التشغيل: Windows 10<br>
+                - حجم الشاشة: 12.9 بوصة<br>
+                - الذاكرة: 256 جيجابايت<br>
+                - البطارية: 10000 مللي أمبير<br>
+                - السعر: $699
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+    
+    <button id="chat-toggle" class="image-button">
+        <img src="{{ url_for('static', filename='images/bot (2).png') }}" alt="Toggle Chat">
+    </button>
+    <div id="chat-container" class="chat-window">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-history" id="chat-history"></div>
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="  . . . . سألني ما شئت">
+            <button id="send-button" class="image-button2">
+                <img src="{{ url_for('static', filename='images/send.png') }}" alt="Send" class="button-image">
+            </button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
